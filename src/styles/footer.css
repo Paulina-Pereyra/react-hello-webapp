@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+/* Estilo general del footer */
+.footer {
+  background-color: #0f0f0f;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Lora', serif;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  flex-direction: column; /* Cambio a columna para dispositivos más pequeños */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #f265bc; /* Color principal */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.footer-logo a:hover {
+  color: #d45ca6;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  gap: 30px;
+  padding: 0; /* Elimina el padding */
+  margin: 20px 0; /* Espacio entre los enlaces y el social */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f265bc;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center; /* Centrado de los iconos sociales */
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #C8B273;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #f265bc;
+}
+
+/* Estilo para el footer inferior */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+  }
+}

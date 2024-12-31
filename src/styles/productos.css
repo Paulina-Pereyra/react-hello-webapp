@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Contenedor general */
+.productos-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/fondo2.jpg');
+  padding: 50px 20px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Título */
+.productos-titulo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+/* Grilla de productos */
+.productos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Tarjetas */
+.producto-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.4s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.producto-card:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen con efecto */
+.producto-imagen-container {
+  height: 260px; /* Incrementar altura para mostrar más de la imagen */
+  overflow: hidden; /* Ocultar contenido excedente */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.producto-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantener proporciones */
+  transition: transform 0.3s ease-in-out; /* Animación suave */
+}
+
+.producto-card:hover .producto-imagen {
+  transform: scale(1.01); /* Reducir zoom a casi imperceptible (1.01) */
+}
+
+
+
+
+/* Información */
+.producto-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.producto-nombre {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.producto-descripcion {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.producto-precio {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ff6fb6;
+  text-transform: uppercase;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .productos-titulo {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .producto-card {
+    transform: none;
+  }
+}

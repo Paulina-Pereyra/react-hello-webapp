@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Usar Poppins */
+    line-height: 1.6; /* Mejorar la legibilidad con un espaciado adecuado */
+    margin: 0;
+    padding: 0;
+  }
+
+/* Estilos generales para la vista de "Dónde Estamos" */
+.donde-estamos-titulo {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #d26fa7; /* Color rosado suave */
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .donde-estamos-info {
+    margin-bottom: 40px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .donde-estamos-ubicacion {
+    background-color: #fbe6f7; /* Fondo rosado suave */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .donde-estamos-ubicacion h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #d26fa7; /* Color rosado suave */
+    margin-bottom: 10px;
+  }
+  
+  .donde-estamos-ubicacion p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .donde-estamos-mapa {
+    background-color: #fff; /* Fondo blanco para el mapa */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .map-container iframe {
+    border: 0;
+    border-radius: 8px; /* Bordes redondeados para el mapa */
+  }
+  
+  @media (max-width: 768px) {
+    .donde-estamos-titulo {
+      font-size: 2.5rem; /* Reducir tamaño en pantallas más pequeñas */
+    }
+  
+    .donde-estamos-info {
+      padding: 20px;
+    }
+  
+    .donde-estamos-mapa {
+      padding: 10px;
+    }
+  }
+  

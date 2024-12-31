@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+/* Estilo general de la vista */
+.contacto-container {
+  background-image: url('../img/fondo2.jpg');
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  min-height: 100vh; /* Asegura que el contenedor tenga al menos el alto de la pantalla */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Cambiado de center a flex-start */
+  padding-top: 20px; /* Asegura que el contenido tenga margen superior */
+}
+
+
+.contacto-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contacto-header h1 {
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.contacto-header p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.contacto-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  min-width: 300px; /* Establece un ancho mínimo */
+  width: 90%; /* Adaptable al ancho de la pantalla */
+  margin: 20px auto; /* Separa el formulario del resto del contenido */
+}
+.contacto-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contacto-form label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  border-color: #f265bc;
+}
+
+.contacto-form button {
+  background-color: #C8B273;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block; /* Permite usar margin auto */
+  margin: 20px auto 0; /* Centra horizontalmente y agrega separación */
+}
+
+.contacto-form button:hover {
+  background-color: #d45ca6;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .contacto-container {
+    padding: 40px 20px;
+  }
+
+  .contacto-form {
+    padding: 30px;
+  }
+
+  .contacto-info {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,81 @@
+/* Estilos generales para la vista sobre Nosotros */
+.sobre-nosotros-container {
+  background-color: #f8f8f8;
+  background-image: url('../img/fondo1.jpg'); /* Cambia 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra toda la sección */
+  background-position: center center; /* Centra la imagen */
+  background-attachment: fixed; /* Hace que la imagen no se mueva cuando se hace scroll */
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+
+.sobre-nosotros-header {
+  margin-bottom: 40px;
+}
+
+.sobre-nosotros-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.sobre-nosotros-titulo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #C8B273;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.sobre-nosotros-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.sobre-nosotros-historia,
+.sobre-nosotros-mision,
+.sobre-nosotros-vision {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.sobre-nosotros-historia h2,
+.sobre-nosotros-mision h2,
+.sobre-nosotros-vision h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #C8B273;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.sobre-nosotros-historia p,
+.sobre-nosotros-mision p,
+.sobre-nosotros-vision p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .sobre-nosotros-titulo {
+    font-size: 2.5rem; /* Reducir tamaño en pantallas más pequeñas */
+  }
+
+  .sobre-nosotros-contenido {
+    padding: 20px;
+  }
+
+  .sobre-nosotros-historia,
+  .sobre-nosotros-mision,
+  .sobre-nosotros-vision {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,77 @@
+/* Importa la fuente Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+/* Contenedor principal */
+.home-container {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Portada */
+.home-portada {
+    height: 75vh; /* Altura de la portada, ajustable para pantallas grandes */
+    background-size: cover; /* La imagen cubre todo el área */
+    background-position: center; /* La imagen se centra */
+    background-color: #f0f0f0; /* Color de fondo por si no se carga la imagen */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+    color: #fff;
+}
+
+/* Estilo del texto de la portada */
+.home-portada-texto h1 {
+    font-family: "Playfair Display", serif; /* Fuente elegante */
+    font-size: 4rem; /* Tamaño grande para resaltar */
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Estilo de la descripción en la portada */
+.home-portada-texto p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem; /* Ajuste de tamaño */
+    margin: 10px 0 20px;
+}
+
+/* Estilo del botón */
+.home-portada-texto .btn {
+    background-color: #C8B273; /* Color de fondo del botón */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Hover en el botón */
+.home-portada-texto .btn:hover {
+    background-color: #C8B273; /* Color de fondo cuando el botón es hover */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .home-portada {
+        height: 50vh; /* Reducir la altura en pantallas pequeñas */
+    }
+
+    .home-portada-texto h1 {
+        font-size: 2.5rem; /* Reducir el tamaño del título */
+    }
+
+    .home-portada-texto p {
+        font-size: 1.2rem; /* Reducir el tamaño de la descripción */
+    }
+
+    .home-portada-texto .btn {
+        font-size: 0.9rem; /* Reducir el tamaño del botón */
+    }
+}
